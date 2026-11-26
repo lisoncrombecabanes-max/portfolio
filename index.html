@@ -76,7 +76,7 @@ var d=document.createElement('canvas');d.width=170;d.height=1039;d.getContext('2
 document.documentElement.style.setProperty('--pimg','url('+p+')');document.documentElement.style.setProperty('--simg','url('+d.toDataURL('image/jpeg',.9)+')')}catch(e){}},{once:true})})();
 (function(){var hi=new Image();hi.onload=function(){var w=hi.width-6,h=hi.height-6,c=document.createElement('canvas');c.width=w;c.height=h;var x=c.getContext('2d');x.drawImage(hi,3,3,w,h,0,0,w,h);
 var im=x.getImageData(0,0,w,h),d=im.data;for(var i=0;i<d.length;i+=4){var r=d[i],g=d[i+1],bl=d[i+2],L=.299*r+.587*g+.114*bl,mx=Math.max(r,g,bl),mn=Math.min(r,g,bl),s=mx?(mx-mn)/mx*255:0;
-var a=Math.max(Math.min(1,Math.max(0,(150-L)/45)),Math.min(1,Math.max(0,(s-60)/40)));d[i+3]=a*255}x.putImageData(im,0,0);document.getElementById('hat').src=c.toDataURL('image/png')};hi.src='HATFILE'})();
+var a=Math.max(Math.min(1,Math.max(0,(150-L)/45)),Math.min(1,Math.max(0,(s-60)/40)));d[i+3]=a*255}x.putImageData(im,0,0);document.getElementById('hat').src=c.toDataURL('image/png')};hi.src='Capture%20d%E2%80%99%C3%A9cran%202026-11-26%20%C3%A0%2008.22.47.png'})();
 (function(){
 var pages=[].slice.call(document.querySelectorAll('.page')),T=pages.length,cur=0,busy=false,FL=1100;
 var root=document.documentElement,prev=document.getElementById('prev'),next=document.getElementById('next');
